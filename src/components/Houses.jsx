@@ -5,7 +5,7 @@ import BedroomImg from "../assets/bedroom.jpg";
 export const Houses = () => {
   return (
     <section id="Houses" className="bg-white flex w-full flex-col px-10 py-12 max-md:max-w-full max-md:px-5">
-      <div className="text-slate-800 text-center text-4xl font-bold self-center whitespace-nowrap mt-1.5">
+      <div className="text-slate-800 text-center text-4xl font-bold self-center whitespace-nowrap mt-1.5 mb-4">
         Houses
       </div>
       <div className="grid mt-4 houseItem">
@@ -92,7 +92,7 @@ export const Houses = () => {
               />
             </div>
           </div>
-          <div className="w-[384px] h-[129px] pl-3.5 py-6 items-start gap-5 inline-flex">
+          <div className="w-[384px] h-[129px] pl-3.5 py-6 bg-[#2947A9] text-[#FFFFFF]  items-start gap-5">
             <div className="w-14 grow shrink basis-0 relative font-semibold">Name: </div>
             <div className="self-stretch grow shrink basis-0 relative font-semibold">Location: </div>
             <div className="w-16 h-3.5 relative font-semibold">Kshs. 0</div>

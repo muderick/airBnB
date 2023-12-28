@@ -11,11 +11,11 @@ export const Navbar = () => {
           </div>
         </div>
         <div className="items-stretch self-center flex justify-between gap-5 my-auto max-md:max-w-full max-md:flex-wrap">
-          <a href='#Homepage' className="text-zinc-900 font-semibold text-lg">Home</a>
-          <a href='#Reputation' className="text-zinc-900 font-semibold text-lg">Reputation</a>
-          <a href='#About' className="text-zinc-900 text-lg font-semibold">About Us</a>
-          <a href='#Houses' className="text-zinc-900 text-lg font-semibold">Houses</a>
-          <a className="text-orange-400 text-lg font-semibold">
+          <a href='#Homepage' className="text-zinc-900 font-semibold nav-link text-lg px-2">Home</a>
+          <a href='#Reputation' className="text-zinc-900 font-semibold nav-link text-lg px-2">Reputation</a>
+          <a href='#About' className="text-zinc-900 nav-link text-lg px-2 font-semibold">About Us</a>
+          <a href='#Houses' className="text-zinc-900 nav-link text-lg px-2 font-semibold">Houses</a>
+          <a href='' className="text-orange-400 nav-link-contact text-lg px-2 font-semibold">
             Contact Us
           </a>
         </div>

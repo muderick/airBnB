@@ -1,2 +1,4 @@
-
+.linear-g {
+    background: linear-gradient(to right, #ffffff 30%, transparent 100%);
+}
 
