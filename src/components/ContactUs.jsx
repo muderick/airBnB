@@ -1,38 +1,87 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./ContactUs.css";
 
 export const ContactUs = () => {
   return (
-    <div className="w-96 h-96 relative bg-white flex-col justify-start items-start inline-flex">
-      <div className="flex-col justify-start items-start gap-8 inline-flex">
-        <div className="justify-start items-start gap-8 inline-flex">
-          <div className="text-zinc-900 text-xl font-medium font-['Work Sans']">
-            Phone:
-          </div>
-          <div className="text-slate-800 text-xl font-normal font-['Work Sans'] capitalize">
-            +254000000000
-          </div>
+    <section
+      id="ContactUs"
+      className="w-full h-full mt-[16rem] flex relative bg-white mb-[8rem]"
+    >
+      <div className="grid contacts w-1/2 pl-[10rem] h-[20%] my-auto">
+        <div className="email flex gap-8">
+          <div className="my-auto">
+            <a
+              href="mailto:mumiaderick@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="email-icon"
+            >
+              <FontAwesomeIcon
+                icon="fa-regular fa-envelope"
+                className="w-[60px] h-[60px] text-[#168de2]"
+              />
+            </a>
+          </div>{" "}
+          <a
+            href="mailto:mumiaderick@gmail.com"
+            className="text-xl font-semibold my-auto"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Email Us
+          </a>
         </div>
-        <div className="justify-start items-start gap-10 inline-flex">
-          <div className="text-zinc-900 text-xl font-medium font-['Work Sans']">
-            Email:
+        <div className="whatsapp flex gap-8 mt-4">
+          <div className="grid h-[60px] my-auto">
+            <a
+              href="https://wa.me/254748236790"
+              className="whatsapp_float"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon="fa-brands fa-whatsapp"
+                className="whatsapp-icon"
+              />
+            </a>
           </div>
-          <div className="text-black text-xl font-normal font-['Work Sans']">
-            hello@gmail.com
+          <a
+            href="https://wa.me/254748236790"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl font-semibold my-auto"
+          >
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <div className="flex socials-parent w-1/2 my-auto pl-1">
+        
+        <div className="socials flex w-full pl-[12rem] gap-2">
+          <div className="fb">
+            <FontAwesomeIcon
+              icon="fa-brands fa-facebook"
+              className="w-[60px] h-[60px] text-[#1877f2]"
+              title="Facebook"
+            />
+          </div>
+          <div className="linked-in">
+            <FontAwesomeIcon
+              icon="fa-brands fa-linkedin"
+              className="w-[60px] h-[60px] text-[#0a66c2]"
+              title="LinkedIn"
+            />
+          </div>
+          <div className="twitter">
+            <FontAwesomeIcon
+              icon="fa-brands fa-square-x-twitter"
+              className="w-[60px] h-[60px] text-[#14171a]"
+              title="Twitter"
+            />
           </div>
         </div>
       </div>
-      <div className="text-zinc-900 text-xl font-medium font-['Work Sans']">
-        Social:
-      </div>
-      <div className="w-10 h-10 bg-black bg-opacity-10 rounded-full" />
-      <div className="w-10 h-10 justify-center items-center inline-flex" />
-      <div className="w-10 h-10 p-px justify-center items-center inline-flex" />
-      <div className="w-10 h-10 p-px justify-center items-center inline-flex" />
-      <div className="relative">
-        <div className="left-0 top-0 absolute text-zinc-900 text-3xl font-bold font-['Work Sans']">
-          AirBNB
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };

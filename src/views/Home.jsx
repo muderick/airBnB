@@ -4,6 +4,8 @@ import { Homepage } from '../components/Homepage'
 import { Reputation } from '../components/Reputation';
 import { About } from '../components/About';
 import { Houses } from '../components/Houses'
+import { ContactUs } from '../components/ContactUs';
+import { Footer } from '../components/Footer';
 
 export const Home = () => {
   return (
@@ -13,6 +15,8 @@ export const Home = () => {
         <Reputation />
         <About />
         <Houses />
+        <ContactUs />
+        <Footer />
     </section>
   )
 }

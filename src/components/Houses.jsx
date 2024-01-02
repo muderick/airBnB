@@ -4,11 +4,11 @@ import BedroomImg from "../assets/bedroom.jpg";
 
 export const Houses = () => {
   return (
-    <section id="Houses" className="bg-white flex w-full flex-col px-10 py-12 max-md:max-w-full max-md:px-5">
-      <div className="text-slate-800 text-center text-4xl font-bold self-center whitespace-nowrap mt-1.5 mb-4">
+    <section id="Houses" className="bg-white flex w-full h-[fit-content] flex-col px-10 py-12 max-md:max-w-full max-md:px-5">
+      <div className="text-slate-800 text-center text-4xl font-bold self-center whitespace-nowrap mt-16 mb-4">
         Houses
       </div>
-      <div className="grid mt-4 houseItem">
+      <div className="grid mt-4 houseItem gap-[10rem] mx-auto">
         <div className="w-[384px] relative">
           <div className="w-[384px] h-[247px] rounded-sm items-start">
             <div className="self-stretch h-60">
