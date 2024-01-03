@@ -12,8 +12,7 @@ export const ContactUs = () => {
         <div className="email flex gap-8">
           <div className="my-auto">
             <a
-              href="mailto:mumiaderick@gmail.com"
-              target="_blank"
+              href="mailto:kmoneywise99@gmail.com"
               rel="noopener noreferrer"
               className="email-icon"
             >
@@ -22,11 +21,10 @@ export const ContactUs = () => {
                 className="w-[60px] h-[60px] text-[#168de2]"
               />
             </a>
-          </div>{" "}
+          </div>
           <a
-            href="mailto:mumiaderick@gmail.com"
+            href="mailto:kmoneywise99@gmail.com"
             className="text-xl font-semibold my-auto"
-            target="_blank"
             rel="noopener noreferrer"
           >
             Email Us
@@ -35,7 +33,7 @@ export const ContactUs = () => {
         <div className="whatsapp flex gap-8 mt-4">
           <div className="grid h-[60px] my-auto">
             <a
-              href="https://wa.me/254748236790"
+              href="https://wa.me/254735959281"
               className="whatsapp_float"
               target="_blank"
               rel="noopener noreferrer"
@@ -47,7 +45,7 @@ export const ContactUs = () => {
             </a>
           </div>
           <a
-            href="https://wa.me/254748236790"
+            href="https://wa.me/254735959281"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl font-semibold my-auto"

@@ -4,8 +4,8 @@ import './Footer.css'
 export const Footer = () => {
   const date = new Date().getFullYear();
   return (
-    <section className="w-screen fixed h-12 pl-6 pr-96 bg-blue-800 justify-between items-center flex mt-8 z-[2] bottom-0">
-      <div className="w-1/2 flex items-stretch justify-between gap-8">
+    <section className="w-screen fixed h-12 px-6 bg-blue-800 items-center flex mt-8 z-[2] bottom-0">
+      <div className="w-1/2 flex items-stretch justify-between">
         <div>
           <FontAwesomeIcon
             icon="fa-brands fa-airbnb"
@@ -16,8 +16,8 @@ export const Footer = () => {
           AirBNB
         </div>
       </div>
-      <div className="text-white text-base font-normal font-['Work Sans'] flex-end">
-        IanBNBs © {date}. All Rights Reserved
+      <div className="text-white text-base font-normal font-['Work Sans'] flex-end pl-[22rem]">
+        Ian<i>BNBs</i> &copy; {date}. All Rights Reserved.
       </div>
     </section>
   );
