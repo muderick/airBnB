@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ContactUs.css";
 
 export const ContactUs = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <section
       id="ContactUs"
@@ -18,7 +20,11 @@ export const ContactUs = () => {
             >
               <FontAwesomeIcon
                 icon="fa-regular fa-envelope"
-                className="w-[60px] h-[60px] text-[#168de2]"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                className={`w-[60px] h-[60px] text-[#168de2] email ${
+                  isHovered ? "hovered" : ""
+                }`}
               />
             </a>
           </div>
@@ -40,7 +46,11 @@ export const ContactUs = () => {
             >
               <FontAwesomeIcon
                 icon="fa-brands fa-whatsapp"
-                className="whatsapp-icon"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                className={`whatsapp-icon ${
+                  isHovered ? "hovered" : ""
+                }`}
               />
             </a>
           </div>
@@ -55,26 +65,37 @@ export const ContactUs = () => {
         </div>
       </div>
       <div className="flex socials-parent w-1/2 my-auto pl-1">
-        
         <div className="socials flex w-full pl-[12rem] gap-2">
           <div className="fb">
             <FontAwesomeIcon
               icon="fa-brands fa-facebook"
-              className="w-[60px] h-[60px] text-[#1877f2]"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className={`w-[60px] h-[60px] text-[#1877f2] facebook ${
+                isHovered ? "hovered" : ""
+              }`}
               title="Facebook"
             />
           </div>
           <div className="linked-in">
             <FontAwesomeIcon
               icon="fa-brands fa-linkedin"
-              className="w-[60px] h-[60px] text-[#0a66c2]"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className={`w-[60px] h-[60px] text-[#0a66c2] linkedin ${
+                isHovered ? "hovered" : ""
+              }`}
               title="LinkedIn"
             />
           </div>
           <div className="twitter">
             <FontAwesomeIcon
               icon="fa-brands fa-square-x-twitter"
-              className="w-[60px] h-[60px] text-[#14171a]"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className={`w-[60px] h-[60px] text-[#14171a] twitter ${
+                isHovered ? "hovered" : ""
+              }`}
               title="Twitter"
             />
           </div>
