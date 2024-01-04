@@ -3,7 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ContactUs.css";
 
 export const ContactUs = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [mailHovered, setMailHovered] = useState(false);
+  const [waHovered, setWaHovered] = useState(false);
+  const [fbHovered, setFbHovered] = useState(false);
+  const [linkedinHovered, setLinkedinHovered] = useState(false);
+  const [xHovered, setXHovered] = useState(false);
 
   return (
     <section
@@ -16,21 +20,20 @@ export const ContactUs = () => {
             <a
               href="mailto:kmoneywise99@gmail.com"
               rel="noopener noreferrer"
-              className="email-icon"
             >
               <FontAwesomeIcon
                 icon="fa-regular fa-envelope"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                className={`w-[60px] h-[60px] text-[#168de2] email ${
-                  isHovered ? "hovered" : ""
+                onMouseEnter={() => setMailHovered(true)}
+                onMouseLeave={() => setMailHovered(false)}
+                className={`w-[60px] h-[60px] text-[#168de2] email-icon ${
+                  mailHovered ? "hovered" : ""
                 }`}
               />
             </a>
           </div>
           <a
             href="mailto:kmoneywise99@gmail.com"
-            className="text-xl font-semibold my-auto"
+            className="text-xl font-semibold my-auto hover:text-[#0000EE]"
             rel="noopener noreferrer"
           >
             Email Us
@@ -40,17 +43,17 @@ export const ContactUs = () => {
           <div className="grid h-[60px] my-auto">
             <a
               href="https://wa.me/254735959281"
-              className="whatsapp_float"
+              className={`whatsapp_float whatsapp-icon_div ${
+                waHovered ? "hovered" : ""
+              }`}
               target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon
                 icon="fa-brands fa-whatsapp"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                className={`whatsapp-icon ${
-                  isHovered ? "hovered" : ""
-                }`}
+                onMouseEnter={() => setWaHovered(true)}
+                onMouseLeave={() => setWaHovered(false)}
+                className={`whatsapp-icon`}
               />
             </a>
           </div>
@@ -58,7 +61,7 @@ export const ContactUs = () => {
             href="https://wa.me/254735959281"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xl font-semibold my-auto"
+            className="text-xl font-semibold my-auto hover:text-[#075E54]"
           >
             WhatsApp
           </a>
@@ -69,10 +72,10 @@ export const ContactUs = () => {
           <div className="fb">
             <FontAwesomeIcon
               icon="fa-brands fa-facebook"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
+              onMouseEnter={() => setFbHovered(true)}
+              onMouseLeave={() => setFbHovered(false)}
               className={`w-[60px] h-[60px] text-[#1877f2] facebook ${
-                isHovered ? "hovered" : ""
+                fbHovered ? "hovered" : ""
               }`}
               title="Facebook"
             />
@@ -80,10 +83,10 @@ export const ContactUs = () => {
           <div className="linked-in">
             <FontAwesomeIcon
               icon="fa-brands fa-linkedin"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
+              onMouseEnter={() => setLinkedinHovered(true)}
+              onMouseLeave={() => setLinkedinHovered(false)}
               className={`w-[60px] h-[60px] text-[#0a66c2] linkedin ${
-                isHovered ? "hovered" : ""
+                linkedinHovered ? "hovered" : ""
               }`}
               title="LinkedIn"
             />
@@ -91,10 +94,10 @@ export const ContactUs = () => {
           <div className="twitter">
             <FontAwesomeIcon
               icon="fa-brands fa-square-x-twitter"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
+              onMouseEnter={() => setXHovered(true)}
+              onMouseLeave={() => setXHovered(false)}
               className={`w-[60px] h-[60px] text-[#14171a] twitter ${
-                isHovered ? "hovered" : ""
+                xHovered ? "hovered" : ""
               }`}
               title="Twitter"
             />

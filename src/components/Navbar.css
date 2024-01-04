@@ -8,7 +8,7 @@
     filter: drop-shadow(#1877f2 2px 5px);
 }
 
-.nav-link:link {
+.nav-link {
     transition: all 350ms ease-in-out;
     border: 1px solid #d6bebe;
     border-radius: 5px;
@@ -22,20 +22,28 @@
     box-shadow: 0 8px 6px -6px black;
 }
 
-.nav-link:active {
+.nav-link.active {
     border: 1px solid #2947A9;
     border-radius: 5px;
     transition-delay: 0.2s;
     color: #2947A9;
+    box-shadow: 0 8px 6px -6px black;
 }
 
-.nav-link-contact:link {
-    border: 1px solid #ffffff;
+.nav-link-contact {
+    border: 1px solid #d6bebe;
     border-radius: 5px;
     transition: all 350ms ease-in-out;
 }
 
 .nav-link-contact:hover {
+    border: 1px solid rgb(251 146 60);
+    border-radius: 5px;
+    transition-delay: 0.2s;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.nav-link-contact.active {
     border: 1px solid rgb(251 146 60);
     border-radius: 5px;
     transition-delay: 0.2s;

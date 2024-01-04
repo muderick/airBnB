@@ -14,15 +14,15 @@
   margin-top: 16px;
 }
 
-.email, .whatsapp-icon, .facebook, .linkedin, .twitter {
+.email-icon, .whatsapp-icon_div, .facebook, .linkedin, .twitter {
   transition: transform 0.3s ease-in-out;
 }
 
-.email:hover, .whatsapp-icon:hover, .facebook:hover, .linkedin:hover, .twitter:hover {
+.email-icon:hover, .whatsapp-icon_div:hover, .facebook:hover, .linkedin:hover, .twitter:hover {
   transform: scale(1.1); /* Increase the scale on hover */
 }
 
-.email.hovered, .whatsapp-icon.hovered, .facebook.hovered, .linkedin.hovered, .twitter.hovered {
+.email-icon.hovered, .whatsapp-icon_div.hovered, .facebook.hovered, .linkedin.hovered, .twitter.hovered {
   transform: scale(1.1); /* Keep the scale if the user is still hovering */
 }
 
