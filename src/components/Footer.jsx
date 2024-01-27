@@ -9,7 +9,7 @@ export const Footer = () => {
         <div>
           <FontAwesomeIcon
             icon="fa-brands fa-airbnb"
-            className="w-[40px] h-[40px] text-[#FFF] icon"
+            className="w-[40px] h-[40px] text-[#1877f2] icon"
           />
         </div>
         <div className="text-white text-3xl italic font-bold self-center grow whitespace-nowrap my-auto">

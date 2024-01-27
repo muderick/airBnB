@@ -15,7 +15,7 @@ export const Houses = () => {
               <img
                 loading="lazy"
                 srcSet={BedroomImg}
-                className="absolute w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
+                className="w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
                 alt=""
               />
             </div>
@@ -23,10 +23,10 @@ export const Houses = () => {
           <div className="w-[384px] h-[129px] pl-3.5 py-6 mix-blend-darken bg-[#2947A9] text-[#FFFFFF] items-start gap-5">
             <div className="w-14 grow shrink basis-0 relative font-semibold">Name: </div>
             <div className="self-stretch grow shrink basis-0 relative font-semibold">Location: </div>
-            <div className="w-16 h-3.5 relative font-semibold house-info">
-              View More
+            <div className="w-full relative font-semibold house-info">
+              View More :
               <div className="overlay-info">
-                <div>Collage</div>
+                <div>Photo Collage</div>
                 <div><h5>Amenities</h5></div>
               </div>
               </div>
@@ -39,7 +39,7 @@ export const Houses = () => {
               <img
                 loading="lazy"
                 srcSet={BedroomImg}
-                className="absolute w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
+                className="w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
                 alt=""
               />
             </div>
@@ -57,7 +57,7 @@ export const Houses = () => {
               <img
                 loading="lazy"
                 srcSet={BedroomImg}
-                className="absolute w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
+                className="w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
                 alt=""
               />
             </div>
@@ -75,7 +75,7 @@ export const Houses = () => {
               <img
                 loading="lazy"
                 srcSet={BedroomImg}
-                className="absolute w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
+                className="w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
                 alt=""
               />
             </div>
@@ -93,7 +93,7 @@ export const Houses = () => {
               <img
                 loading="lazy"
                 srcSet={BedroomImg}
-                className="absolute w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
+                className="w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
                 alt=""
               />
             </div>
@@ -111,7 +111,7 @@ export const Houses = () => {
               <img
                 loading="lazy"
                 srcSet={BedroomImg}
-                className="absolute w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
+                className="w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
                 alt=""
               />
             </div>
