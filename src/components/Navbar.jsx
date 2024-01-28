@@ -13,7 +13,7 @@ export const Navbar = () => {
       id="navBar"
       className="justify-between items-stretch bg-white flex w-full gap-5 pl-5 pr-20 py-2 max-md:max-w-full max-md:flex-wrap max-md:px-5"
     >
-      <div className="flex items-stretch justify-between gap-3">
+      <div className="flex items-stretch justify-between">
         <div className="">
           <FontAwesomeIcon
             icon="fa-brands fa-airbnb"
@@ -21,7 +21,7 @@ export const Navbar = () => {
           />
         </div>
         <div className="text-blue-800 text-3xl italic font-bold self-center grow whitespace-nowrap my-auto">
-          AirBNB
+          irBNB
         </div>
       </div>
       <div className="items-stretch self-center flex justify-between gap-5 my-auto max-md:max-w-full max-md:flex-wrap">
