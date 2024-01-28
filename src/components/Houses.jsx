@@ -30,7 +30,7 @@ export const Houses = () => {
               <img
                 loading="lazy"
                 srcSet={BedroomImg}
-                className="w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
+                className="absolute w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
                 alt=""
               />
             </div>
@@ -55,7 +55,7 @@ export const Houses = () => {
               <img
                 loading="lazy"
                 srcSet={BedroomImg}
-                className="w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
+                className="absolute w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
                 alt=""
               />
             </div>
