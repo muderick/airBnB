@@ -5,13 +5,18 @@
 .overlay-info {
     position: absolute;
     background: whitesmoke;
-    height: 100px;
-    width: 250px;
+    height: 600px;
+    width: 600px;
     color: black;
-    padding: 5px;
+    padding: 2rem 5px 5px 5px;
     border: 1px solid #000;
     border-radius: 5px;
     left: 25%;
     top: 0;
-    z-index: 5;
+    z-index: 1;
+    display: none;
+}
+
+.show-overlay {
+    display: grid;
 }

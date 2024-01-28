@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import './Houses.css';
 import BedroomImg from "../assets/bedroom.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Houses = () => {
+  const [collageClass, setCollageClass] = useState('overlay-info');
+
+  const handleClickAddClass = () => {
+    const collage = document.querySelector('.overlay-info');
+    collage.classList.add('show-overlay');
+    console.log(collage.classList)
+  }
+
+  const handleClickRemoveClass = () => {
+    const collage = document.querySelector('.overlay-info');
+    collage.classList.remove('show-overlay');
+    console.log(collage.classList)
+  }
+
   return (
     <section id="Houses" className="bg-white flex w-full h-[fit-content] flex-col px-10 py-12 max-md:max-w-full max-md:px-5 overflow-hidden">
       <div className="text-slate-800 text-center text-4xl font-bold self-center whitespace-nowrap mt-16 mb-4">
@@ -24,9 +38,10 @@ export const Houses = () => {
           <div className="w-[384px] h-[129px] pl-3.5 py-6 mix-blend-darken bg-[#2947A9] text-[#FFFFFF] items-start gap-5">
             <div className="w-14 grow shrink basis-0 relative font-semibold">Name: </div>
             <div className="self-stretch grow shrink basis-0 relative font-semibold">Location: </div>
-            <div className="w-full relative font-semibold house-info">
-              View More :
+            <div className="w-full font-semibold house-info">
+              <div onClick={handleClickAddClass} className="cursor-pointer p-2 rounded-md bg-white text-[#2947A9] w-28">View More :</div>
               <div className="overlay-info">
+                <FontAwesomeIcon icon="fa-regular fa-circle-xmark" className="cursor-pointer absolute left-2 top-2" onClick={handleClickRemoveClass} />
                 <div>Photo Collage</div>
                 <div><h5>Amenities</h5></div>
               </div>

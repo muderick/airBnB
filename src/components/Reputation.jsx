@@ -21,7 +21,7 @@ export const Reputation = () => {
                   Best Services
                 </div>
                 <div className="text-slate-400 text-base self-stretch mt-5">
-                  Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+                  The provided services all together are a top notch.
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ export const Reputation = () => {
                   Satisfactory
                 </div>
                 <div className="text-slate-400 text-base self-stretch mt-5">
-                  Ultricies at ipsum nunc, tristique nam lectus.
+                  We ensure our Clients are fully satisfied.
                 </div>
               </div>
             </div>
