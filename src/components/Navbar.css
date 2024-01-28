@@ -1,7 +1,7 @@
 #navBar {
     position: fixed;
     z-index: 2;
-    box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 5px 6px -6px black;
 }
 
 .icon {

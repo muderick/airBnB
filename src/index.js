@@ -6,8 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faWhatsapp, faFacebook, faLinkedin, faSquareXTwitter, faAirbnb } from "@fortawesome/free-brands-svg-icons";
+import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faEnvelope, faWhatsapp, faFacebook, faLinkedin, faSquareXTwitter, faAirbnb);
+library.add(faEnvelope, faWhatsapp, faFacebook, faLinkedin, faSquareXTwitter, faAirbnb, faCircleChevronDown);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,6 +1,7 @@
 import React from "react";
 import './Houses.css';
 import BedroomImg from "../assets/bedroom.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Houses = () => {
   return (
@@ -23,7 +24,7 @@ export const Houses = () => {
           <div className="w-[384px] h-[129px] pl-3.5 py-6 mix-blend-darken bg-[#2947A9] text-[#FFFFFF] items-start gap-5">
             <div className="w-14 grow shrink basis-0 relative font-semibold">Name: </div>
             <div className="self-stretch grow shrink basis-0 relative font-semibold">Location: </div>
-            <div className="w-16 h-3.5 relative font-semibold">Kshs. 0</div>
+            <div className="w-[fit-content] h-3.5 relative font-semibold">View rates $ <FontAwesomeIcon icon="fa-solid fa-circle-chevron-down" className="text-white bg-[transparent]" /></div>
           </div>
         </div>
 
