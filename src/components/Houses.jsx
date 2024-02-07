@@ -30,7 +30,7 @@ export const Houses = () => {
               <img
                 loading="lazy"
                 srcSet={BedroomImg}
-                className="absolute w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
+                className="w-[384px] h-[247px] object-cover object-center inset-0 scroll no-repeat"
                 alt=""
               />
             </div>
@@ -42,7 +42,7 @@ export const Houses = () => {
             <div className="self-stretch grow shrink basis-0 relative font-semibold">
               Location:{" "}
             </div>
-            <div className="w-full font-semibold house-info relative">
+            <div className="w-full font-semibold house-info grid">
               <div
                 onClick={openModal}
                 className="cursor-pointer p-2 rounded-md bg-white text-[#2947A9] w-28"
@@ -51,7 +51,6 @@ export const Houses = () => {
               </div>
               <Modal isOpen={isModalOpen} onClose={closeModal}>
                 <h2>Your Modal Content Goes Here</h2>
-                <p>Additional content...</p>
               </Modal>
             </div>
           </div>
@@ -85,6 +84,8 @@ export const Houses = () => {
               <Modal isOpen={isModalOpen} onClose={closeModal}>
                 <h2>Your Modal Content Goes Here</h2>
                 <p>Additional content...</p>
+                <div className="self-stretch h-60">
+            </div>
               </Modal>
             </div>
           </div>

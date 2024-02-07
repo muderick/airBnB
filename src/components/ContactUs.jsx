@@ -12,7 +12,7 @@ export const ContactUs = () => {
   return (
     <section
       id="ContactUs"
-      className="w-full mt-16 h-full relative bg-white mb-[8rem]"
+      className="w-full mt-16 h-full bg-white mb-[8rem]"
     >
       <div className="text-slate-800 text-center text-4xl font-bold self-center whitespace-nowrap mb-4">
         Contact Us

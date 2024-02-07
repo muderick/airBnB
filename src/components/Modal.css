@@ -8,11 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 1000;
   }
   
   .modal {
-    background-color: grey;
+    background-color: white;
     color: black;
     width: 80%;
     height: 80%;
@@ -20,7 +20,7 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
-    z-index: 4;
+    z-index: 1000;
     opacity: 1;
   }
   
@@ -33,4 +33,11 @@
     font-size: 20px;
     cursor: pointer;
     color: #333;
+  }
+
+  .closeButton:hover,
+  .closeButton:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
   }
